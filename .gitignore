@@ -9,3 +9,4 @@ xcuserdata/
 *.mobileprovision
 .env
 *.log
+.secrets/
