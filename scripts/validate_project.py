@@ -63,7 +63,11 @@ source_groups = [v for v in objects.values() if v.get('isa') == 'PBXGroup' and v
 assert len(source_groups) == 1
 source_group = source_groups[0]
 for ref_id in source_group['children']:
-    assert (ROOT / 'MikaConsole' / objects[ref_id]['path']).is_file()
+    ref_path = ROOT / 'MikaConsole' / objects[ref_id]['path']
+    if objects[ref_id].get('lastKnownFileType') == 'folder.assetcatalog':
+        assert ref_path.is_dir()
+    else:
+        assert ref_path.is_file()
 sources = [objects[key] for key in native['buildPhases'] if objects[key]['isa'] == 'PBXSourcesBuildPhase']
 assert len(sources) == 1
 actual = []
