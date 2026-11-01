@@ -1,0 +1,10 @@
+Mika 控制台 (Mika Console)
+Copyright 2026 Mika Console contributors
+
+本项目的客户端协议设计衍生自 wangzan101/Mika 的远程任务 HTTP API 设计：
+https://github.com/wangzan101/Mika
+上游采用 Apache License, Version 2.0。
+
+本项目为非官方、独立的 iOS 验证客户端，未获上游背书，不是 Mika 官方发布。
+未复制或修改安卓端实现；Mika 名称仅用于说明协议兼容性。
+本项目按 Apache License, Version 2.0 许可，全文见 LICENSE。
