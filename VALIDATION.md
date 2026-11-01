@@ -54,3 +54,8 @@
 - 原始证据位置（先移除令牌和个人信息）：
 - 归因：协议 / 网络 / iOS 限制 / 上游 / 待确认：
 - 后续：修复 / 复测 / 停止及原因：
+
+## 构建证据（2026-11-01 追加）
+
+- GitHub Actions CI run 41317717147（repo: yijigao/mika-ios-console，job 124881208703）：macos-26 runner，xcodebuild build（generic iOS Simulator，CODE_SIGNING_ALLOWED=NO）**BUILD SUCCEEDED**，47 秒。链接：https://github.com/yijigao/mika-ios-console/actions/runs/41317717147
+- 含义：Swift 源码与工程结构在真实 Xcode 下编译通过。仍未做：签名构建、TestFlight 分发、真机安装与五项真机标准实测。
